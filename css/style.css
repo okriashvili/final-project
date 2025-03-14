@@ -1,0 +1,158 @@
+* {
+    font-family: Helvetica;
+}
+.mainbox {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox > header, div, footer {
+    width: 100%;
+}
+.mainbox > div {
+    border: 2px solid black;
+}
+/* აქ ვიწყებთ ჰედერის გასტოლვას */
+header {
+    width: 100%;
+    height: 67px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.romano-daniels {
+    /* margin-left: 30px; */
+    width: auto;
+    height: 100%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 > a {
+    font: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    color: black;
+    font-weight: bolder;
+}
+nav {
+    width: 50%;
+    height: 100%;
+}
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.underline {
+    text-decoration: underline;
+}
+li > a {
+    color: black;
+    font-size: 25px;
+}
+.contact {
+    padding: 15px;
+    background-color: #E3FF00;
+    transition-duration: 0.5s;
+}
+.contact:hover {
+    color: white;
+    background-color: black;
+    transition-duration: 0.5s;
+    outline: black;
+}
+/* aq morcha hederi */
+
+/* aq daviwyet fanjara */
+
+/* welcome-stack */
+.welcome {
+    width: 100%;
+    height: 596px;
+    background-image: url("../images/first-bg-image.png");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+} 
+
+.welcome > img {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+}
+.welcome-stack {
+    width: 575px;
+    height: 264px;
+    border: 5px solid black;
+    position: absolute;
+    top: 269px;
+    left: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.welcome-stack > div {
+    border: 2px solid red;
+    height: 60px;
+    width: 100px;
+} 
+/* our-service-stack */
+.our-services {
+    width: 100%;
+    height: 737px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.our-services-stack {
+    border: 2px solid green;
+    width: 1170px;
+    height: 516px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.our-services-stack > div {
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+}
+.our-services-stack4 {
+    width: 100% !important;
+    height: 271px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-services-stack4-cards {
+    height: 100%;
+    width: 369px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: start;
+}
+/* .our-services-stack4-cards-input {
+    height: 60px;
+    width: 100px;
+    border: 2px solid black;
+} */
+
+
