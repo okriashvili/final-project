@@ -10,17 +10,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
     <title>final project</title>
 </head>
 
 <body>
     <div class="mainbox">
-        <header>
+        <header class="header header-none">
             <div class="romano-daniels">
                 <h1>
                     <a href="#" id="#">
@@ -41,7 +46,7 @@
                         <a href="projects.html">projects</a>
                     </li>
                     <li>
-                        <a href="about.html">About Us</a>
+                        <a href="aboutus.html">About Us</a>
                     </li>
                     <li>
                         <a class="contact" href="contact.html">CONTACT</a>
@@ -49,41 +54,176 @@
                 </ul>
             </nav>
         </header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-none">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link underline" href="#">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link contact" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="services">
             <div class="services-img"></div>
             <div class="services-stack">
-                <div class="1 our-services-stack1">
-                    <p class="p-14">our serivces</p>
+                <div class="our-services-stack1">
+                    <p class="p-roboto p-14 mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="d-inline bi bi-caret-right-fill svg" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>our serivces
+                    </p>
                 </div>
                 <div class="services-stack2 our-services-stack2 ">
-                    <h2 class="h40 h38 h50">Diverse solutions tailored to your every need</h2>
+                    <h2 class="h40 h38 h50 h-">Diverse solutions tailored to your every need</h2>
                 </div>
-
-
-                
+                <!-- first dropdown -->
                 <div class="services-stack3">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Dropdown button
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sustainable & eco-friendly
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                      </div>
-
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4  services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It’s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- second dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Site management
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- third dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Residential Construction
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- fourth dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Civil engineering
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- fifth dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Commercial constructio
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- sixth dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Precosntruction
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- seventh dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Landscape Construction
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
+                    <!-- eight dropdown -->
+                    <div class="dropdown services-dropdown">
+                        <button class="btn-secondary services-stack3-dropdwoun-button b-28" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Special projects
+                        </button>
+                        <i class="fa-solid fa-caret-down text-dark dropdown-icon"></i>
+                        <ul class="dropdown-menu services-dropdown-menu w-100">
+                            <p class="p-roboto h4 services-dropdown-menu-item d-block mb3">
+                                This is the space to describe the service and explain how customers or clients can
+                                benefit from it. It s an opportunity to add a short description that includes relevant
+                                details, like pricing, duration, location and how to book the service.
+                            </p>
+                        </ul>
+                    </div>
                 </div>
-
-
-
-
             </div>
         </div>
-
-
-
-
         <div class="promotional">
             <div class="promotional-stack">
                 <div class="quote">

@@ -10,12 +10,16 @@
         display: none;
     }
 
-    nav {
-        width: 100% !important;
-        z-index: 3;
-        height: 250px;
+    .header-none {
+        display: none !important;
     }
-
+   
+    .navbar-none {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    
     ul {
         width: 100%;
         display: flex;
@@ -50,12 +54,13 @@
     .welcome-stack {
         width: 345px;
         height: 212px;
-        position: absolute;
-        top: 30px;
-        left: 20px;
         display: flex;
         justify-content: space-around;
         align-items: start;
+    }
+
+    .welcome-stack1 {
+
     }
 
     .h53 {
@@ -67,6 +72,7 @@
     }
 
     /* our-serivce */
+
     .our-services {
         width: 100%;
         height: 1216px;
@@ -86,7 +92,7 @@
     }
 
     .h38 {
-        font-size: 38px;
+        font-size: 28px;
     }
 
     .our-services-stack4 {
@@ -107,12 +113,10 @@
         align-items: start;
     }
 
-    /* .our-services-stack4-cards-input {
-        width: 100%;
-        height: 100px;
-    } */
     /* aq morcha service */
+
     /* aq daviwyet about */
+
     .about {
         width: 100%;
         height: 562px;
@@ -131,6 +135,7 @@
     }
 
     /* clients */
+
     .clients {
         width: 100%;
         height: 275px;
@@ -150,6 +155,7 @@
     }
 
     /* projects */
+
     .projects {
         width: 100%;
         height: 713px;
@@ -283,9 +289,10 @@
     }
 
     /* phone-index.html-end */
+
     /* services-phone */
+
     .services {
-        border: 2px solid orange;
         width: 100%;
         height: 1048px;
         display: flex;
@@ -299,19 +306,20 @@
     }
 
     .services-img {
+        margin-top: 10pxs;
         height: 352px;
     }
 
     .services-stack {
-        height: 605px;
+        height: 655px;
     }
 
-
-
-
-
+    .b-28 {
+        font-size: 20px;
+    }
 
     /* projects-link */
+
     .projects-gallery1 {
         width: 100%;
         height: 458px;
@@ -352,19 +360,97 @@
         font-family: helvetica;
     }
 
+    /* aboutus-link */
+
+    .aboutus-main {
+        height: 924px;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        
+        /* z-index: 5; */
+    }
+
+    .aboutus-stack1 {
+        height: 96px;
+    }
+
+    .aboutus-stack2 {
+        height: 658px;
+    }
+
+    .about-longline {
+        border-bottom: 2px solid rgb(46, 45, 45);
+        width: 90%;
+        position: absolute;
+        top: 100px;
+        width: 87%;
+    }
+
+    .h64 {
+        font-size: 48px;
+    }
 
 
+    /* contact-link */
 
+    .contact-main {
+        height: 357px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
 
+    .stack1 {
+        height: 53px;
+    }
 
+    .stack2 {
+        height: 186px;
+    }
+    
+    .contact-main-longline {
+        width: 87%;
+        border-bottom: 2px solid rgb(46, 45, 45);
+    }
 
+    .contact-main2 {
+        height: 1000px;
+        flex-direction: column;
 
+    }
 
+    .contact-main2-stack1 {
+        height: 220px;
+    }
 
+    .contact-main2-stack2 {
+        height: 711px;
+    }
 
-
+    .contact-img {
+        height: 100%;
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ipad - აიპადისთვის */
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -385,8 +471,14 @@
 
     }
 
+    .header {
+        position: absolute !important;
+    }
+
     /* aq morcha hederi */
+
     /* aq viwyebt welcomes */
+
     .welcome {
         width: 100%;
         height: 616px;
@@ -599,29 +691,20 @@
     }
 
     .services>div {
-        width: 690px;
+        width: 710px;
     }
 
     .services-img {
-        height: 738px;
+        height: 758px;
+        margin-top: 10px;
     }
 
     .sercive-stack {
         height: 403px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     /* projects */
+ 
     .projects-gallery1 {
         width: 100%;
         height: 459px;
@@ -657,4 +740,58 @@
         height: 170px;
     }
 
+    /* aboutus-link */
+    .aboutus-main {
+        height: 780px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+
+        /* z-index: 5; */
+    }
+
+    .aboutus-main-stack {
+        height: 653px;
+    }
+
+    .about-longline {
+        border-bottom: 2px solid rgb(46, 45, 45);
+        width: 90%;
+        position: absolute;
+        top: 100px;
+        width: 87%;
+    }
+
+    .h64 {
+        font-size: 40px;
+    }
+    
+    /* contact-link */
+
+    .contact-main {
+        height: 396px;
+        margin-top: 20px;
+    }
+    
+    .contact-main-stack {
+        height: 234px;
+    }
+
+    .contact-main-longline {
+        width: 87%;
+        border-bottom: 2px solid rgb(46, 45, 45);
+    }
+
+    .contact-main2 {
+        height: 822px;
+    }
+
+    .contact-main2-stack {
+        height: 759px;
+    }
+
+    .contact-img {
+        height: 30%;
+    }
+ 
 }

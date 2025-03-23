@@ -1,0 +1,34 @@
+.p-roboto {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf");
+}
+
+.h2-opensans {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 64px;
+}
+
+.font-open-sans {
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+.submit {
+    font-family: "Kantumruy Pro", sans-serif;
+}
+
+.font-notosans {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.font-IMBplexsans {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.h64 {
+    font-size: 55px;
+}
+
+
+
+
